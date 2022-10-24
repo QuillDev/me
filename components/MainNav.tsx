@@ -29,24 +29,29 @@ export const MainNav = () => (
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 gap-4 sm:text-2xl lg:text-4xl h-1/2">
             {/* Twitch Rivals */}
             <a href={"https://www.twitch.tv/videos/1406569209?t=3h43m25s"} target="_blank" rel="noopener noreferrer">
-                <div className="p-14 text-center bg-twitchrivals bg-center rounded-lg hover:border-red-800 border-black border-4">
-                    <div className="text-4xl">Twitch Rivals</div>
+                <div className="bg-twitchrivals bg-center rounded-lg hover:border-red-800 border-black border-4 h-full">
+                    <div className="text-center lg:p-2">Twitch Rivals</div>
                 </div>
             </a>
             {/* Minehut */}
             <a href={"https://minehut.com/"} target="_blank" rel="noopener noreferrer">
-                <div className="p-14 text-4xl text-center bg-minehut bg-center rounded-lg hover:border-red-800 border-black border-4">
-                    Minehut
+                <div className="bg-minehut bg-center rounded-lg hover:border-red-800 border-black border-4 h-full">
+                    <div className="text-center lg:p-2">
+                        Minehut
+                    </div>
                 </div>
             </a>
             {/* Open Source */}
-            <a href={"https://minehut.com/"} target="_blank" rel="noopener noreferrer">
-                <div className="p-14 text-4xl text-center bg-blue-900 bg-center rounded-lg hover:border-red-800 border-black border-4">
-                    Open Source Projects
+            <a href={"https://github.com/QuillDev"} target="_blank" rel="noopener noreferrer">
+                <div className="bg-blue-900 bg-center rounded-lg hover:border-red-800 border-black border-4 h-full">
+                    <div className="text-center lg:p-2">
+                        Open Source Projects
+                    </div>
                 </div>
+
             </a>
         </div>
     </>
